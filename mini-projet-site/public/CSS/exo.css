@@ -1,0 +1,387 @@
+@import url('https//fonts.googleeapis.com/css?');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/*Nav bar Responsibe*/
+nav{
+  height: 97px;
+  background: #2ecc71;
+  color: #2A2F2B;
+}
+nav img{
+  width: 150px;
+  position: absolute;
+  top: 17px;
+  left: 12%;
+  background-color: #2ecc71;
+}
+nav ul{
+  float: right;
+  margin-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 15px;
+  color: #2A2F2B;
+}
+nav ul li a{
+  position: relative;
+  color:#2A2F2B;
+  font-size: 18px;
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+nav ul li a::before{
+position: absolute;
+content: '';
+left: 0;
+bottom: 0;
+height: 3px;
+width: 100%;
+background:#012811;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform .4s linear
+}
+nav ul li a:hover::before{
+ transform: scaleX(1);
+ transform-origin: left;
+}
+label #btn,
+label #cancel{
+  color: rgb(59, 40, 40);
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media(max-width:1118px){
+  nava img{
+    left: 8%;
+  }
+}
+@media (max-width:994px){
+  nav img{
+    left: 6%;
+    top: 20px;
+    width: 130px;
+  }
+  nav ul li a{
+    font-size: 17px;
+  }
+}
+@media (max-width:860px){
+label #btn{
+  display: block;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background:  #cafbde;
+  top: 80px;
+  left: -100%;
+  text-align: center;
+  transition: all .5s;
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px;
+}
+nav ul li a{
+  font-size: 20px;
+}
+#check:checked ~ ul{
+left: 0;
+}
+#check:checked ~ label #btn{
+  display: none;
+}
+#check:checked ~ label #cancel{
+  display: block;
+}
+}
+/* fin de la Nav bar Responsibe*/
+.about-us{
+  height: 100vh;
+  width: 100%;
+  padding: 90px 0;
+  background: #b9134f;
+  top: -30px;
+}
+.span{
+  color: #b9134f;
+}
+.pic{
+  height: auto;
+  width:  302px;
+}
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.text{
+  width: 540px;
+}
+.text h2{
+  font-size: 50px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  background: linear-gradient(120deg,#2A2F2B 20.69%, #20682f 50.19%, #2ecc71 79.69%);
+  -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background: linear-gradient(120deg,#2A2F2B 20.69%, #20682f 50.19%, #2ecc71 79.69%);
+   -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+span{
+ background: #fd4766;
+ -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+.data-projet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3em;
+}
+.data{
+  margin-top: 30px;
+}
+.contactinfolangague ul li
+{
+    color: #1d1d24;
+    text-decoration: none;
+    list-style-type: none;
+}
+.contactinfolangague .text
+{
+    color: #1d1d24;
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contactinfolangague .percent
+{
+position:relative;
+width: 100%;
+height: 6px;
+background:#f0f0f0  ;
+display: block;
+margin-top: 5px;
+}
+.contactinfolangague .percent div 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:#FFB6C1 ;
+}
+.aboutSkills .box
+{
+position: relative;
+width: 100%;
+display: grid;
+grid-template-columns: 150px 1fr;
+justify-content: center;
+align-items: center;
+}
+.aboutSkills .box h4
+{
+text-transform: uppercase;
+color: #1d1d24;
+font-weight: 500;
+}
+.aboutSkills .box .percent
+{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background:#f0f0f0 ;
+
+}
+.aboutSkills .box .percent div 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background:#ea8897;
+}
+.correction{
+  display: none;
+}
+/* Si la taille de l'écran est de 601 ou plus, on met la taille du texte à 80px */
+@media screen and (min-width: 601px) {
+p{
+      font-size: 80px;
+}
+
+h2{
+  font-size:65px ;
+}
+}
+
+/* Si la taille de l'écran est de 600px ou moins, on met la taille du texte à 30px */
+
+@media screen and (max-width: 600px) {
+p{
+      font-size: 30px;
+  }
+}
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 25px;
+}
+@media only screen and(min-width:600px) {
+  img{
+    width: 100%;
+  }
+}
+.footer{
+  height: 6em;
+  width: auto;
+  border: solid #2ecc71 3px;
+  background-color: #2ecc71;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+}
+
+.texte-footer{
+  margin: 0.5em;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.icone-footer{
+  display: flex;
+  justify-content: center;
+}
+.icone-footer i{
+  margin: 0.5em;
+  padding: 0 0.2em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+button{
+  height: 25px;
+  width: 115px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: solid 2px red;
+  background-color: #fff;
+  color: red;
+}
+.hljs, .hljs-subst {
+  color: #444;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #F0F0F0;
+}
+pre code {
+  border-left: 4px #49242f solid;
+}
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
+code {
+  padding: 0.2rem 0.4rem;
+  font-size: 90%;
+  color: #bd4147;
+  background-color: #f7f7f9;
+  border-radius: 0.25rem;
+}
+code {
+  font-size: 87.5%;
+  color: #e83e8c;
+  word-break: break-word;
+}
+code, kbd, pre, samp {
+  font-family: "Liberation Mono","Courier New",monospace;
+}
+code, kbd, pre, samp {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+code {
+  font-family: monospace;
+}
+pre {
+  display: block;
+  font-size: 87.5%;
+  color: #212529;
+}
+pre {
+  font-family: monospace;
+  white-space: pre;
+}
+#scroll_to_top {
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  bottom: 50px;
+  right: 30px;
+}
+#scroll_to_top img {
+  width: 25px;
+}
+@media only screen and(min-width:600px) {
+  img{
+    width: 100%;
+  }
+}
+.div{
+  display: none;
+}
+.div:hover{
+  display: block;
+}
